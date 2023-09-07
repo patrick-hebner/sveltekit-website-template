@@ -14,8 +14,7 @@ module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
 		fontFamily: {
-			sans: ['Inter', 'sans-serif'],
-			mono: ['Fira Code', 'monospace']
+			sans: ['Rajdhani', 'sans-serif']
 		},
 		extend: {
 			textColor: {
