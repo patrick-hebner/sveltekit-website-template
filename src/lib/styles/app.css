@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	:root {
+		--color-primary-50: 255, 241, 242;
+		--color-primary-100: 255, 228, 230;
+		--color-primary-200: 254, 205, 211;
+		--color-primary-300: 253, 164, 175;
+		--color-primary-400: 251, 113, 133;
+		--color-primary-500: 244, 63, 94;
+		--color-primary-600: 225, 29, 72;
+		--color-primary-700: 190, 18, 60;
+		--color-primary-800: 159, 18, 57;
+		--color-primary-900: 136, 19, 55;
+		--color-primary-950: 76, 5, 25;
+
+        --color-neutral-50: theme('colors.slate.50')
+		--color-neutral-100: theme('colors.slate.100')
+		--color-neutral-200: theme('colors.slate.200')
+		--color-neutral-300: theme('colors.slate.300')
+		--color-neutral-400: theme('colors.slate.400')
+		--color-neutral-500: theme('colors.slate.500')
+		--color-neutral-600: theme('colors.slate.600')
+		--color-neutral-700: theme('colors.slate.700')
+		--color-neutral-800: theme('colors.slate.800')
+		--color-neutral-900: theme('colors.slate.900')
+		--color-neutral-950: theme('colors.slate.950')
+
+
+		--color-text-base: 255, 0, 0;
+		--color-text-inverted: 255, 255, 255;
+
+		--base: 255, 255, 0;
+		--inverted: 0, 0, 0;
+	}
+}
