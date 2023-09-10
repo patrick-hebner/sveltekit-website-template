@@ -6,8 +6,8 @@
 	import LinkButton from '../../base/LinkButton.svelte';
 </script>
 
-<Section classes="relative h-screen">
-	<Container classes="relative z-10 h-full flex flex-col py-20">
+<Section classes="relative min-h-screen">
+	<Container classes="relative z-10 min-h-screen flex flex-col py-20">
 		<Heading classes="text-inverted mt-auto" level="h1" variant="xl"
 			>We create the digital products of tomorow</Heading
 		>
