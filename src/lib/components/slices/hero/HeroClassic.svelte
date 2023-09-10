@@ -3,7 +3,7 @@
 	import Container from '$lib/components/base/Container.svelte';
 	import Heading from '$lib/components/base/Heading.svelte';
 	import Text from '$lib/components/base/Text.svelte';
-	import LinkButton from '../base/LinkButton.svelte';
+	import LinkButton from '../../base/LinkButton.svelte';
 </script>
 
 <Section classes="relative h-screen">
