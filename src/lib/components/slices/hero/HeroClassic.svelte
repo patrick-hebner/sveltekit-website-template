@@ -4,6 +4,7 @@
 	import Heading from '$lib/components/base/Heading.svelte';
 	import Text from '$lib/components/base/Text.svelte';
 	import LinkButton from '../../base/LinkButton.svelte';
+	import Spacer from '$lib/components/base/Spacer.svelte';
 </script>
 
 <Section classes="relative min-h-screen">

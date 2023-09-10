@@ -34,6 +34,7 @@
 	"dependencies": {
 		"@fontsource/rajdhani": "^5.0.8",
 		"clsx": "^2.0.0",
+		"lucide-svelte": "^0.276.0",
 		"tailwind-merge": "^1.14.0"
 	}
 }
