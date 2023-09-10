@@ -1,2 +1,5 @@
-<h1 class="text-9xl font-black text-neutral-300">Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import HeroClassic from '$lib/components/slices/HeroClassic.svelte';
+</script>
+
+<HeroClassic />
