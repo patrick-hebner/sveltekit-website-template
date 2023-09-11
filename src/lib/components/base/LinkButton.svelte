@@ -4,6 +4,7 @@
 	export let target = '_self';
 	export let href: string = '';
 	export let variant: 'small' | 'default' | 'large' = 'default';
+	export let inverted = false;
 	export let classes = '';
 </script>
 
@@ -16,7 +17,8 @@
 		classes,
 		{
 			'text-md px-2': variant === 'small',
-			'text-2xl px-10 font-black': variant === 'large'
+			'text-2xl px-10 font-black': variant === 'large',
+			'bg-base hover:bg-primary-50 text-base': inverted
 		}
 	)}><slot /></a
 >

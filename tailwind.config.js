@@ -37,7 +37,7 @@ module.exports = {
 				},
 				neutral: colors.slate,
 				base: withOpacity('--base'),
-				inverted: withOpacity('--base-inverted'),
+				inverted: withOpacity('--inverted'),
 				transparent: colors.transparent
 			}
 		}
