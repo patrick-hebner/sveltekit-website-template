@@ -4,6 +4,6 @@
 	export let classes = '';
 </script>
 
-<div class={cn('max-w-8xl mx-auto px-6 ms:px-10 md:px-20', classes)}>
+<div class={cn('max-w-[var(--size-container)] mx-auto px-6 ms:px-10 md:px-20', classes)}>
 	<slot />
 </div>
