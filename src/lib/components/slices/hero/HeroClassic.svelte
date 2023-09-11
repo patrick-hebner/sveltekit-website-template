@@ -7,7 +7,10 @@
 	import Spacer from '$lib/components/base/Spacer.svelte';
 </script>
 
-<Section classes="relative min-h-screen">
+<Section classes="relative min-h-screen overflow-hidden">
+	<div
+		class="absolute bottom-0 left-0 h-full w-full bg-gradient-to-tr from-primary-500/30 to-transparent z-10"
+	/>
 	<Container classes="relative z-10 min-h-screen flex flex-col py-20">
 		<Heading classes="text-inverted mt-auto" level="h1" variant="xl"
 			>We create the digital products of tomorow</Heading
@@ -19,7 +22,7 @@
 		<LinkButton variant="large" classes="mt-10">Let's build together</LinkButton>
 	</Container>
 	<div class=" w-[2px] absolute z-10 top-0 right-10 h-full overflow-hidden">
-		<div class="scroll-indicator w-[2px] bg-white absolute z-10 left-0 h-full" />
+		<div class="scroll-indicator w-[2px] bg-white absolute z-20 left-0 h-full" />
 	</div>
 	<div class="absolute inset-0 z-0">
 		<img class="h-full w-full object-cover" src="/images/hero.jpg" alt="hero" />
