@@ -13,8 +13,8 @@
 	/>
 	<Spacer size="large" />
 	<Container classes="relative z-10">
-		<Heading classes="text-inverted">Convinced? Let's start a project!</Heading>
-		<LinkButton inverted variant="large" classes="mt-10">Contact Us!</LinkButton>
+		<Heading classes="text-inverted">Convinced?<br /> Let's start a project!</Heading>
+		<LinkButton inverted variant="huge" classes="mt-20">Contact Us!</LinkButton>
 	</Container>
 	<Spacer size="large" />
 </Section>

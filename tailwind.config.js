@@ -14,7 +14,7 @@ module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
 		fontFamily: {
-			sans: ['Rajdhani', 'sans-serif']
+			sans: ['Poppins', 'sans-serif']
 		},
 		extend: {
 			textColor: {

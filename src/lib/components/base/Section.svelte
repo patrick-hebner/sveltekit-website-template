@@ -2,9 +2,10 @@
 	import { cn } from '$lib/utils/cn';
 
 	export let id = '';
+	export let tag: 'header' | 'footer' | 'section' = 'section';
 	export let classes = '';
 </script>
 
-<section {id} class={cn('relative', classes)}>
+<svelte:element this={tag} {id} class={cn('relative', classes)}>
 	<slot />
-</section>
+</svelte:element>

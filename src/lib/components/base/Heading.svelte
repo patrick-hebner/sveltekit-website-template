@@ -9,9 +9,9 @@
 <svelte:element
 	this={level}
 	class={cn('font-sans h-fit text-text-color', classes, {
-		'font-black text-5xl md:text-6xl lg:text-7xl xl:text-9xl': variant === 'xl',
-		'font-black  text-3xl md:text-4xl lg:text-5xl': variant === 'lg',
-		'font-black  text-2xl md:text-3xl lg:text-4xl': variant === 'md',
+		'font-bold text-5xl md:text-6xl lg:text-7xl xl:text-9xl': variant === 'xl',
+		'font-bold  text-3xl md:text-4xl lg:text-5xl': variant === 'lg',
+		'font-bold  text-2xl md:text-3xl lg:text-4xl': variant === 'md',
 		'font-semibold text-xl md:text-2xl lg:text-3xl': variant === 'sm',
 		'font-semibold text-lg md:text-xl lg:text-2xl': variant === 'xs',
 		'font-semibold text-md md:text-lg lg:text-xl': variant === '2xs',

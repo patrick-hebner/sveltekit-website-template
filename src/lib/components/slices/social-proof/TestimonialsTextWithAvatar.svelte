@@ -15,10 +15,10 @@
 <Section>
 	<Spacer />
 	<Container>
-		<Heading variant="md" level="h2" classes="text-primary-500 text-center"
+		<Heading variant="sm" level="h2" classes="text-primary-500 text-center mx-auto"
 			>What our clients say</Heading
 		>
-		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 mt-10">
+		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 mt-20">
 			<TestimonialWithAvatar
 				name="Mary Jason"
 				position="CEO of Mary Creatives"

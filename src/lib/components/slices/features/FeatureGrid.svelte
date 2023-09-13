@@ -9,7 +9,7 @@
 <Section classes="bg-primary-50">
 	<Spacer />
 	<Container>
-		<Heading variant="lg" level="h2" classes="text-center text-primary-800"
+		<Heading variant="lg" level="h2" classes="text-center text-primary-500"
 			>What we can do for you</Heading
 		>
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 mt-20">

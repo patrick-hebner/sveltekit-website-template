@@ -11,7 +11,7 @@
 
 <Spacer />
 <SplitScreenContainer>
-	<div slot="left" class="w-full md:w-1/3 min-w-[300px] md:my-40">
+	<div slot="left" class="w-full min-w-[300px] max-w-[400px] md:my-40">
 		<Heading level="h2" variant="lg">We have the best experts in the industry</Heading>
 		<Text classes="mt-4" tag="p">
 			Etsy roof party hashtag, iceland gochujang sus copper mug palo santo. Mumblecore wayfarers

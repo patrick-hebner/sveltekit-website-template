@@ -17,10 +17,10 @@
 <Section>
 	<Spacer />
 	<Container>
-		<Heading variant="md" level="h2" classes="text-primary-500 text-center"
+		<Heading variant="sm" level="h2" classes="text-primary-500 text-center max-w-md mx-auto"
 			>We work with top notch companies around the globe</Heading
 		>
-		<div class="mt-10 grid grid-cols-3 lg:grid-cols-6 place-items-center gap-10">
+		<div class="mt-20 grid grid-cols-3 lg:grid-cols-6 place-items-center gap-10">
 			{#each companyLogoUrls as logoUrl}
 				<div class="w-16 h-1w-16">
 					<img src={logoUrl} alt="company logo" class="h-full w-full object-contain" />
