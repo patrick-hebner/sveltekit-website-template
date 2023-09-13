@@ -12,7 +12,7 @@
 		<Heading variant="lg" level="h2" classes="text-center text-primary-800"
 			>What we can do for you</Heading
 		>
-		<div class="grid grid-cols-3 gap-20 mt-20">
+		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 mt-20">
 			<TextWithIconVertical>
 				<Heading slot="title" variant="xs" level="h3"
 					>This is some text describing a cool service of the company</Heading

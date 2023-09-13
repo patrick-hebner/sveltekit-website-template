@@ -9,7 +9,7 @@
 <Spacer />
 <Section classes="bg-primary-400 overflow-hidden">
 	<div
-		class="absolute -right-[600px] -bottom-[600px] bg-primary-500 w-[1200px] h-[1200px] rounded-full z-0"
+		class="background absolute -right-[800px] -bottom-[800px] bg-primary-500 w-[1600px] h-[1600px] rounded-full z-0"
 	/>
 	<Spacer size="large" />
 	<Container classes="relative z-10">
