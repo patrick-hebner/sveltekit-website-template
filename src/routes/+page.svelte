@@ -33,7 +33,6 @@
 	];
 </script>
 
-<SimpleHeader />
 <HeroClassic />
 <Section>
 	<Spacer />
@@ -53,4 +52,3 @@
 <RightTextWithImage />
 <TestimonialsTextWithAvatar />
 <CtaBanner />
-<SimpleCenteredFooter />
