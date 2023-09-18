@@ -1,10 +1,10 @@
-<script>
+<script lang="ts">
 	import '@fontsource/poppins/300.css';
 	import '@fontsource/poppins/600.css';
 	import '@fontsource/poppins/700.css';
 	import '$lib/styles/app.css';
-	import SimpleHeader from '$lib/components/headers/SimpleHeader.svelte';
-	import SimpleCenteredFooter from '$lib/components/footers/SimpleCenteredFooter.svelte';
+	import SimpleHeader from '$lib/components/layout/headers/SimpleHeader.svelte';
+	import SimpleCenteredFooter from '$lib/components/layout/footers/SimpleCenteredFooter.svelte';
 </script>
 
 <SimpleHeader />

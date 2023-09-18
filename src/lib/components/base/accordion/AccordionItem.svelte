@@ -25,24 +25,33 @@
 	$: isOpen = collapse ? isActive : open;
 </script>
 
-<div class="w-full p-2">
+<div
+	class={cn('w-full border-b-2 border-primary-100 ', {
+		'border-primary-500 mb-10': isOpen
+	})}
+>
 	<button
 		on:click={handleClick}
-		class="w-full flex justify-between"
+		class={cn('flex w-full justify-between py-4 transition-all hover:text-primary-500', {
+			'border-primary-500 text-primary-500': isOpen
+		})}
 		aria-expanded={isOpen}
 		aria-controls="accordion-{itemId}"
-		><div class="flex-shrink-0"><slot name="title" /></div>
+	>
+		<div class="flex-shrink-0">
+			<slot name="title" />
+		</div>
 		<div
 			class={cn('flex-shrink-0 transition-transform', {
 				'rotate-90': isOpen
 			})}
 		>
 			<slot name="icon"><ChevronRight /></slot>
-		</div></button
-	>
+		</div>
+	</button>
 	{#if isOpen}
 		<div
-			class="mb-4"
+			class="my-4"
 			transition:slide|local
 			role="region"
 			aria-labelledby="accordion-{itemId}"
