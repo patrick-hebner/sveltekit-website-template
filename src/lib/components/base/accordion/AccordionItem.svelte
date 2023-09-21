@@ -38,7 +38,7 @@
 		aria-expanded={isOpen}
 		aria-controls="accordion-{itemId}"
 	>
-		<div class="flex-shrink-0">
+		<div class="text-left">
 			<slot name="title" />
 		</div>
 		<div
