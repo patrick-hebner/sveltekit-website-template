@@ -4,24 +4,20 @@
 	import Section from '$lib/components/base/Section.svelte';
 	import Spacer from '$lib/components/base/Spacer.svelte';
 
-	let companyLogoUrls: string[] = [
-		'/images/companies/apple.png',
-		'/images/companies/nike.png',
-		'/images/companies/airbnb.png',
-		'/images/companies/coca-cola.png',
-		'/images/companies/netflix.png',
-		'/images/companies/mcdonald.png'
-	];
+	export let data: {
+		title: string;
+		logos: string[];
+	};
 </script>
 
 <Section>
 	<Spacer />
 	<Container>
 		<Heading variant="sm" level="h2" classes="text-primary-500 text-center max-w-md mx-auto"
-			>We work with top notch companies around the globe</Heading
+			>{data.title}</Heading
 		>
 		<div class="mt-20 grid grid-cols-3 lg:grid-cols-6 place-items-center gap-10">
-			{#each companyLogoUrls as logoUrl}
+			{#each data.logos as logoUrl}
 				<div class="w-16 h-1w-16">
 					<img src={logoUrl} alt="company logo" class="h-full w-full object-contain" />
 				</div>

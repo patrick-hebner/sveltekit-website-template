@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { cn } from '$lib/utils/cn';
-	import { isMobileMenuViewport } from '$lib/stores/mobileMenu';
 	import { page } from '$app/stores';
 
 	export let href: string;
@@ -11,9 +10,10 @@
 <a
 	{href}
 	class={cn(
-		`flex-shrink-0 text-base font-semibold h-full flex items-center px-4 py-4 
-	border-b-4 border-transparent hover:border-primary-500`,
+		`flex-shrink-0 text-base font-semibold h-auto flex items-center px-4 py-4 
+	border-b-4 border-transparent hover:bg-primary-100 md:hover:border-primary-500 md:hover:bg-transparent
+	`,
 
-		{ 'text-primary-500 border-primary-500': active, 'hover:bg-primary-100': $isMobileMenuViewport }
+		{ 'text-primary-500 md:border-primary-500': active }
 	)}><slot /></a
 >

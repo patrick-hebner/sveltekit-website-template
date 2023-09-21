@@ -1,17 +1,12 @@
 <script lang="ts">
 	import { cn } from '$lib/utils/cn';
 	import HeaderNavItem from './HeaderNavItem.svelte';
-	import { isMobileMenuViewport, mobileMenu } from '$lib/stores/mobileMenu';
+	import { mobileMenu } from '$lib/stores/mobileMenu';
 	import { clickOutside } from '$lib/actions/click-outside';
 	import { Menu, X } from 'lucide-svelte';
-
-	const mobileClasses =
-		'absolute flex-col bg-base w-full h-auto left-0 top-16 gap-8 overflow-hidden grid';
-	const mobileClassesClosed = `${mobileClasses} grid-rows-[0fr] pointer-events-none`;
-	const mobileClassesOpen = `${mobileClasses} grid-rows-[1fr]`;
 </script>
 
-<div class="items-center flex md:hidden">
+<div class="flex items-center md:hidden relative z-10">
 	{#if $mobileMenu}
 		<button on:click={mobileMenu.close}><X /></button>
 	{:else}
@@ -20,16 +15,16 @@
 </div>
 <nav
 	use:clickOutside={mobileMenu.close}
-	class={cn('flex items-center h-full transition-all ', {
-		[mobileClassesClosed]: $isMobileMenuViewport && !$mobileMenu,
-		[mobileClassesOpen]: $isMobileMenuViewport && $mobileMenu
-	})}
+	class={cn(
+		`absolute z-10 left-0 top-16 w-full bg-base md:bg-transparent grid md:flex md:static 
+		md:justify-end md:items-center md:h-full transition-all `,
+		{
+			'grid-rows-[0fr] pointer-events-none md:pointer-events-auto': !$mobileMenu,
+			'grid-rows-[1fr] border-b-2 border-primary-500': $mobileMenu
+		}
+	)}
 >
-	<div
-		class={cn('flex h-full', {
-			'overflow-hidden block h-auto': $isMobileMenuViewport
-		})}
-	>
+	<div class={cn('flex flex-col w-full h-full md:flex-row md:justify-end overflow-hidden ')}>
 		<HeaderNavItem href="/services">Services</HeaderNavItem>
 		<HeaderNavItem href="/about">About</HeaderNavItem>
 		<HeaderNavItem href="/contact">Contact</HeaderNavItem>
