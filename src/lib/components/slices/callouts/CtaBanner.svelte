@@ -1,9 +1,17 @@
-<script>
+<script lang="ts">
 	import Container from '../../base/Container.svelte';
 	import Heading from '../../base/Heading.svelte';
 	import LinkButton from '../../base/LinkButton.svelte';
 	import Section from '../../base/Section.svelte';
 	import Spacer from '../../base/Spacer.svelte';
+
+	export let data: {
+		title: string;
+		cta: {
+			title: string;
+			link: string;
+		};
+	};
 </script>
 
 <Spacer />
@@ -13,8 +21,10 @@
 	/>
 	<Spacer size="large" />
 	<Container classes="relative z-10">
-		<Heading classes="text-inverted">Convinced?<br /> Let's start a project!</Heading>
-		<LinkButton inverted variant="huge" classes="mt-20">Contact Us!</LinkButton>
+		<Heading classes="text-inverted">{@html data.title}</Heading>
+		<LinkButton href={data.cta.link} inverted variant="huge" classes="mt-20"
+			>{data.cta.title}</LinkButton
+		>
 	</Container>
 	<Spacer size="large" />
 </Section>

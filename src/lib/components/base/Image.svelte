@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { cn } from '$lib/utils/cn';
 	import type { Metadata, MetadataEntry } from '@11ty/eleventy-img';
 
 	export let lazy = true;
@@ -6,6 +7,8 @@
 	export let stats: Metadata;
 	export let sizes = '';
 	export let cover = false;
+	export let classes = '';
+	export let pictureClasses = '';
 	$: sources = Object.keys(stats).map((key) => {
 		const imgConfig = stats[key as keyof typeof stats];
 
@@ -17,7 +20,7 @@
 	$: defaultImg = stats.jpeg && stats.jpeg[stats.jpeg.length - 1];
 </script>
 
-<picture>
+<picture class={cn('overflow-hidden', pictureClasses)}>
 	{#each sources as source}
 		<source type={source.type} srcset={source.srcset} {sizes} />
 	{/each}
@@ -28,20 +31,8 @@
 		height={defaultImg?.height}
 		loading={lazy ? 'lazy' : 'eager'}
 		decoding="async"
-		class:cover
+		class={cn('max-w-full h-auto block object-center', classes, {
+			'w-full h-full object-cover ': cover
+		})}
 	/>
 </picture>
-
-<style>
-	img {
-		max-width: 100%;
-		height: auto;
-	}
-	img.cover {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		object-position: center;
-		display: block;
-	}
-</style>

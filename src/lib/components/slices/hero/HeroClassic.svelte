@@ -5,6 +5,7 @@
 	import Text from '$lib/components/base/Text.svelte';
 	import LinkButton from '../../base/LinkButton.svelte';
 	import Image from '$lib/components/base/Image.svelte';
+	import type EleventyImage from '@11ty/eleventy-img';
 
 	export let data: {
 		title: string;
@@ -14,7 +15,7 @@
 			link: string;
 		};
 		image: {
-			src: string;
+			stats: EleventyImage.Metadata;
 			alt: string;
 		};
 	};
@@ -35,7 +36,7 @@
 		<div class="scroll-indicator w-[2px] bg-white absolute z-20 left-0 h-full" />
 	</div>
 	<div class="absolute inset-0 z-0">
-		<img class="h-full w-full object-cover" src={data.image.src} alt={data.image.alt} />
+		<Image cover stats={data.image.stats} alt={data.image.alt} />
 	</div>
 </Section>
 

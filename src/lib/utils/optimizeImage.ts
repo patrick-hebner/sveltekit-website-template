@@ -1,15 +1,16 @@
-import Image, { type ImageOptions } from '@11ty/eleventy-img';
+import Image, { type ImageFormatWithAliases, type ImageOptions } from '@11ty/eleventy-img';
+const defaults: {
+	formats: ImageFormatWithAliases[];
+	widths: number[];
+} = {
+	formats: ['avif', 'webp', 'jpeg'],
+	widths: [400, 800, 1600, 2000]
+};
 
-export async function optimize(
-	url: string,
-	{ formats, widths }: ImageOptions = {
-		formats: ['avif', 'webp', 'jpeg'],
-		widths: [400, 800, 1600, 2000]
-	}
-) {
+export async function optimize(url: string, options?: ImageOptions) {
 	const stats = await Image(url, {
-		formats,
-		widths,
+		formats: options?.formats || defaults.formats,
+		widths: options?.widths || defaults.widths,
 		urlPath: '/img/',
 		outputDir: './static/img/'
 	});
