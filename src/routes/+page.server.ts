@@ -87,18 +87,6 @@ export const load: PageServerLoad = async () => {
 						content: `Jean shorts ethical jawn cliche vaporware typewriter whatever mlkshk master cleanse marfa mixtape
 				sriracha lyft. Marxism gastropub microdosing woke asymmetrical tattooed kale chips poutine sartorial
 				bespoke la croix.`
-					},
-					{
-						title: 'This is some text describing a cool service of the company',
-						content: `Jean shorts ethical jawn cliche vaporware typewriter whatever mlkshk master cleanse marfa mixtape
-				sriracha lyft. Marxism gastropub microdosing woke asymmetrical tattooed kale chips poutine sartorial
-				bespoke la croix.`
-					},
-					{
-						title: 'This is some text describing a cool service of the company',
-						content: `Jean shorts ethical jawn cliche vaporware typewriter whatever mlkshk master cleanse marfa mixtape
-				sriracha lyft. Marxism gastropub microdosing woke asymmetrical tattooed kale chips poutine sartorial
-				bespoke la croix.`
 					}
 				]
 			}

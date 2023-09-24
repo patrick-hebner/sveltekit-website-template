@@ -10,7 +10,7 @@
 	export let data: {
 		title: String;
 		text: String;
-		bullets: string[];
+		bullets?: string[];
 		image: {
 			stats: EleventyImage.Metadata;
 			alt: string;
@@ -20,25 +20,29 @@
 
 <Spacer />
 <SplitScreenContainer>
-	<div slot="left" class="h-80 md:h-auto md:max-w-[28rem]">
-		<Image
-			stats={data.image.stats}
-			alt={data.image.alt}
-			sizes="(min-width: 768px) 50vw, 100vw"
-			cover
-			classes="object-bottom rounded-3xl grayscale"
-		/>
+	<div slot="left" class="h-80 md:h-full md:flex md:items-center md:max-w-[28rem]">
+		<div class="h-full md:h-auto">
+			<Image
+				stats={data.image.stats}
+				alt={data.image.alt}
+				sizes="(min-width: 768px) 50vw, 100vw"
+				cover
+				classes="rounded-3xl grayscale"
+			/>
+		</div>
 	</div>
 	<div slot="right" class="pt-10 md:pt-0 md:pl-10 flex flex-col justify-center h-full">
 		<Heading level="h2" variant="lg">{data.title}</Heading>
 		<Text classes="mt-4" tag="p">
 			{data.text}
 		</Text>
-		<div class="mt-10 flex flex-col gap-4">
-			{#each data.bullets as bullet}
-				<TextWithIcon>{bullet}</TextWithIcon>
-			{/each}
-		</div>
+		{#if data.bullets}
+			<div class="mt-10 flex flex-col gap-4">
+				{#each data.bullets as bullet}
+					<TextWithIcon>{bullet}</TextWithIcon>
+				{/each}
+			</div>
+		{/if}
 	</div>
 </SplitScreenContainer>
 

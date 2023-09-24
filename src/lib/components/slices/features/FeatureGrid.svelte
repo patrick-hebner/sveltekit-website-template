@@ -4,9 +4,11 @@
 	import Section from '$lib/components/base/Section.svelte';
 	import Spacer from '$lib/components/base/Spacer.svelte';
 	import TextWithIconVertical from '$lib/components/feature/TextWithIconVertical.svelte';
+	import { cn } from '$lib/utils/cn';
 
 	export let data: {
 		title: string;
+		threeColumns?: boolean;
 		features: {
 			title: string;
 			content: string;
@@ -18,7 +20,11 @@
 	<Spacer />
 	<Container classes="relative z-10">
 		<Heading variant="lg" level="h2" classes="text-center text-primary-500">{data.title}</Heading>
-		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 mt-20">
+		<div
+			class={cn('grid grid-cols-1 sm:grid-cols-2  gap-20 mt-20', {
+				'lg:grid-cols-3': data.threeColumns
+			})}
+		>
 			{#each data.features as feature}
 				<TextWithIconVertical>
 					<Heading slot="title" variant="xs" level="h3">{feature.title}</Heading>
