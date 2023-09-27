@@ -3,6 +3,7 @@
 	import Text from '$lib/components/base/Text.svelte';
 	import type EleventyImage from '@11ty/eleventy-img';
 	import Image from '../base/Image.svelte';
+	import { cn } from '$lib/utils/cn';
 
 	export let image: {
 		stats: EleventyImage.Metadata;
@@ -10,11 +11,18 @@
 	};
 	export let name = '';
 	export let position = '';
+	export let centered = false;
 </script>
 
-<div class="relative flex flex-col gap-4">
-	<div class="text-7xl font-bold text-primary-200 absolute -left-4 -top-4 z-0">"</div>
-	<Text classes="relative z-10"><slot /></Text>
+<div class={cn('relative flex flex-col gap-4', { 'items-center': centered })}>
+	<div
+		class={cn('text-7xl font-bold text-primary-200 absolute -left-4 -top-4 z-0', {
+			'left-1/2 -translate-x-1/2 text-9xl': centered
+		})}
+	>
+		"
+	</div>
+	<Text classes={cn('relative z-10')}><slot /></Text>
 	<div class="flex gap-4 items-center">
 		<div class="w-20 h-20 flex-shrink-0">
 			<Image

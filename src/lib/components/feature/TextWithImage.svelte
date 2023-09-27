@@ -20,13 +20,13 @@
 </script>
 
 <div class="flex flex-col md:flex-row flex-1 gap-6 md:gap-10 items-center">
-	<div class="md:w-1/2 max-h-[300px] w-full">
+	<div class="md:w-1/2 max-h-full w-full">
 		<Image
 			stats={data.image.stats}
 			alt={data.image.alt}
 			sizes="(min-width: 768px) 50vw, 100vw"
 			cover
-			classes="rounded-3xl grayscale w-full"
+			classes="rounded-3xl grayscale w-full max-h-[240px] md:max-h-full"
 		/>
 	</div>
 	<div class={cn('md:w-1/2', { 'md:-order-2': inverted })}>

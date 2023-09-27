@@ -8,6 +8,7 @@ import HeroClassic from '$lib/components/slices/hero/HeroClassic.svelte';
 import HeroClassicSmall from '$lib/components/slices/hero/HeroClassicSmall.svelte';
 import StaticCompaniesBanner from '$lib/components/slices/social-proof/StaticCompaniesBanner.svelte';
 import TestimonialsTextWithAvatar from '$lib/components/slices/social-proof/TestimonialsTextWithAvatar.svelte';
+import SingleTestimonialTextWithAvatar from '$lib/components/slices/social-proof/SingleTestimonialTextWithAvatar.svelte';
 
 export const components = {
 	CtaBanner: CtaBanner,
@@ -19,5 +20,6 @@ export const components = {
 	HeroClassic: HeroClassic,
 	StaticCompaniesBanner: StaticCompaniesBanner,
 	TestimonialsTextWithAvatar: TestimonialsTextWithAvatar,
-	HeroClassicSmall: HeroClassicSmall
+	HeroClassicSmall: HeroClassicSmall,
+	SingleTestimonialTextWithAvatar: SingleTestimonialTextWithAvatar
 };

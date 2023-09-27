@@ -18,7 +18,7 @@
 </script>
 
 <Spacer size="large" />
-<Container classes="flex flex-col gap-10 lg:gap-20">
+<Container classes="flex flex-col gap-16 lg:gap-24">
 	{#each data.features as feature, i}
 		<TextWithImage data={feature} inverted={i % 2 !== 0} />
 	{/each}

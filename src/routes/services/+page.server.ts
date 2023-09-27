@@ -6,19 +6,17 @@ export const load: PageServerLoad = async () => {
 		{
 			component: 'HeroClassicSmall',
 			data: {
-				title: 'We create the digital products of tomorow',
+				title: 'Our Services',
 				subtitle:
-					'Etsy roof party hashtag, iceland gochujang sus copper mug palo santo. Mumblecore wayfarers tofu vice pinterest roof party swag cliche 8-bit bodega boys live-edge mukbang freegan.',
-				cta: {
-					title: "Let's build together",
-					link: ''
-				},
+					'You need support from the idea to the launch of your new digital product. As a full service product agency we help you with all aspects of product development.',
+
 				image: {
 					stats: await optimize('./static/images/hero-services.jpg'),
 					alt: ''
 				}
 			}
 		},
+
 		{
 			component: 'FeatureListImageText',
 			data: {
@@ -68,6 +66,32 @@ export const load: PageServerLoad = async () => {
 						}
 					}
 				]
+			}
+		},
+		{
+			component: 'SingleTestimonialTextWithAvatar',
+			data: {
+				testimonial: {
+					name: 'Mary Jason',
+					position: 'CEO of Mary Creatives',
+					image: {
+						stats: await optimize('./static/images/people/joel.jpg', { widths: [160] }),
+						alt: 'Mary Jason'
+					},
+					content: `I'm baby hexagon tote bag marfa 8-bit. Put a bird on it mustache craft beer meditation.
+			Shoreditch before they sold out jawn succulents keytar, freegan wolf irony. Bicycle rights
+			portland tbh cupping shabby chic.`
+				}
+			}
+		},
+		{
+			component: 'CtaBanner',
+			data: {
+				title: "Convinced?<br /> Let's start a project!",
+				cta: {
+					title: 'Contact Us!',
+					link: ''
+				}
 			}
 		}
 	];
