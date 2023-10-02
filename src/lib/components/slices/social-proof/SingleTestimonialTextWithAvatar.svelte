@@ -4,20 +4,9 @@
 	import Section from '$lib/components/base/Section.svelte';
 	import Spacer from '$lib/components/base/Spacer.svelte';
 	import TestimonialWithAvatar from '$lib/components/social-proof/TestimonialWithAvatar.svelte';
-	import type EleventyImage from '@11ty/eleventy-img';
+	import type { SingleTestimonialTextWithAvatar } from '../types';
 
-	export let data: {
-		title: string;
-		testimonial: {
-			name: string;
-			position: string;
-			content: string;
-			image: {
-				stats: EleventyImage.Metadata;
-				alt: string;
-			};
-		};
-	};
+	export let data: SingleTestimonialTextWithAvatar;
 </script>
 
 <Section classes="overflow-hidden">

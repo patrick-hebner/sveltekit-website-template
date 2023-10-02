@@ -2,19 +2,9 @@
 	import Container from '$lib/components/base/Container.svelte';
 	import Spacer from '$lib/components/base/Spacer.svelte';
 	import TextWithImage from '$lib/components/feature/TextWithImage.svelte';
-	import type EleventyImage from '@11ty/eleventy-img';
+	import type { FeatureListImageText } from '../types';
 
-	export let data: {
-		features: {
-			title: String;
-			text: String;
-			bullets?: string[];
-			image: {
-				stats: EleventyImage.Metadata;
-				alt: string;
-			};
-		}[];
-	};
+	export let data: FeatureListImageText;
 </script>
 
 <Spacer size="large" />

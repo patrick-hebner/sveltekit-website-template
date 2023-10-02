@@ -24,13 +24,8 @@
 	</div>
 	<Text classes={cn('relative z-10')}><slot /></Text>
 	<div class="flex gap-4 items-center">
-		<div class="w-20 h-20 flex-shrink-0">
-			<Image
-				stats={image.stats}
-				alt={image.alt}
-				cover
-				classes="rounded-full ring-2 ring-primary-500"
-			/>
+		<div class="w-20 h-20 flex-shrink-0 ring-2 ring-primary-500 rounded-full">
+			<Image stats={image.stats} alt={image.alt} cover classes="rounded-full grayscale " />
 		</div>
 		<div>
 			<Heading variant="xs" level="h4">{name}</Heading>

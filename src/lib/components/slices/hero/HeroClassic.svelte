@@ -5,20 +5,9 @@
 	import Text from '$lib/components/base/Text.svelte';
 	import LinkButton from '../../base/LinkButton.svelte';
 	import Image from '$lib/components/base/Image.svelte';
-	import type EleventyImage from '@11ty/eleventy-img';
+	import type { HeroClassic } from '../types';
 
-	export let data: {
-		title: string;
-		subtitle: string;
-		cta: {
-			title: string;
-			link: string;
-		};
-		image: {
-			stats: EleventyImage.Metadata;
-			alt: string;
-		};
-	};
+	export let data: HeroClassic;
 </script>
 
 <Section classes="relative min-h-screen overflow-hidden">

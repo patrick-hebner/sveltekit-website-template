@@ -4,14 +4,9 @@
 	import LinkButton from '../../base/LinkButton.svelte';
 	import Section from '../../base/Section.svelte';
 	import Spacer from '../../base/Spacer.svelte';
+	import type { CtaBanner } from '../types';
 
-	export let data: {
-		title: string;
-		cta: {
-			title: string;
-			link: string;
-		};
-	};
+	export let data: CtaBanner;
 </script>
 
 <Section classes="bg-primary-400 overflow-hidden">

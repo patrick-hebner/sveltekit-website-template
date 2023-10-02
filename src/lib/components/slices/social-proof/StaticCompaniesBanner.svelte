@@ -4,15 +4,9 @@
 	import Image from '$lib/components/base/Image.svelte';
 	import Section from '$lib/components/base/Section.svelte';
 	import Spacer from '$lib/components/base/Spacer.svelte';
-	import type EleventyImage from '@11ty/eleventy-img';
+	import type { StaticCompaniesBanner } from '../types';
 
-	export let data: {
-		title: string;
-		logos: {
-			stats: EleventyImage.Metadata;
-			alt: string;
-		}[];
-	};
+	export let data: StaticCompaniesBanner;
 </script>
 
 <Section>

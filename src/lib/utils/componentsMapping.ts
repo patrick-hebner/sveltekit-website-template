@@ -9,6 +9,7 @@ import HeroClassicSmall from '$lib/components/slices/hero/HeroClassicSmall.svelt
 import StaticCompaniesBanner from '$lib/components/slices/social-proof/StaticCompaniesBanner.svelte';
 import TestimonialsTextWithAvatar from '$lib/components/slices/social-proof/TestimonialsTextWithAvatar.svelte';
 import SingleTestimonialTextWithAvatar from '$lib/components/slices/social-proof/SingleTestimonialTextWithAvatar.svelte';
+import TeamMembersGrid from '$lib/components/slices/team/TeamMembersGrid.svelte';
 
 export const components = {
 	CtaBanner: CtaBanner,
@@ -21,5 +22,10 @@ export const components = {
 	StaticCompaniesBanner: StaticCompaniesBanner,
 	TestimonialsTextWithAvatar: TestimonialsTextWithAvatar,
 	HeroClassicSmall: HeroClassicSmall,
-	SingleTestimonialTextWithAvatar: SingleTestimonialTextWithAvatar
+	SingleTestimonialTextWithAvatar: SingleTestimonialTextWithAvatar,
+	TeamMembersGrid: TeamMembersGrid
 };
+
+export function component(comp: string) {
+	return components[comp as keyof typeof components];
+}

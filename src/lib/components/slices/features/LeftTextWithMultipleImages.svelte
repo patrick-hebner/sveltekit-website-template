@@ -5,27 +5,9 @@
 	import SplitScreenContainer from '$lib/components/base/SplitScreenContainer.svelte';
 	import Text from '$lib/components/base/Text.svelte';
 	import TextWithIcon from '$lib/components/feature/TextWithIcon.svelte';
-	import type EleventyImage from '@11ty/eleventy-img';
+	import type { LeftTextWithMultipleImages } from '../types';
 
-	export let data: {
-		title: String;
-		text: String;
-		bullets: string[];
-		images: {
-			image1: {
-				stats: EleventyImage.Metadata;
-				alt: string;
-			};
-			image2: {
-				stats: EleventyImage.Metadata;
-				alt: string;
-			};
-			image3: {
-				stats: EleventyImage.Metadata;
-				alt: string;
-			};
-		};
-	};
+	export let data: LeftTextWithMultipleImages;
 </script>
 
 <Spacer />

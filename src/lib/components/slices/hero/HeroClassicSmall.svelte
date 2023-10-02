@@ -5,20 +5,9 @@
 	import Text from '$lib/components/base/Text.svelte';
 	import Spacer from '$lib/components/base/Spacer.svelte';
 	import Image from '$lib/components/base/Image.svelte';
-	import type EleventyImage from '@11ty/eleventy-img';
+	import type { HeroClassicSmall } from '../types';
 
-	export let data: {
-		title: string;
-		subtitle: string;
-		cta: {
-			title: string;
-			link: string;
-		};
-		image: {
-			stats: EleventyImage.Metadata;
-			alt: string;
-		};
-	};
+	export let data: HeroClassicSmall;
 </script>
 
 <Section classes="relative">

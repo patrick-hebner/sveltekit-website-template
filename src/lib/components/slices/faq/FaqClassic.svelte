@@ -2,13 +2,11 @@
 	import Spacer from '$lib/components/base/Spacer.svelte';
 	import Section from '$lib/components/base/Section.svelte';
 	import { Accordion, AccordionItem } from '$lib/components/base/accordion';
-	import type { FaqItem } from './types';
 	import Container from '../../base/Container.svelte';
 	import Heading from '../../base/Heading.svelte';
-	export let data: {
-		title: string;
-		faqs: FaqItem[];
-	};
+	import type { FaqClassic } from '../types';
+
+	export let data: FaqClassic;
 </script>
 
 <Section>

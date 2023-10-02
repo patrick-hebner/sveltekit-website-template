@@ -1,7 +1,9 @@
-<script>
-	import Spacer from '$lib/components/base/Spacer.svelte';
+<script lang="ts">
+	import { component } from '$lib/utils/componentsMapping.js';
+
+	export let data;
 </script>
 
-<Spacer />
-
-<h1>About</h1>
+{#each data.slices as slice}
+	<svelte:component this={component(slice.component)} data={slice.data} />
+{/each}

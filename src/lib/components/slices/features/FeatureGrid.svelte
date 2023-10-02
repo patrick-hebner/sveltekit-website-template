@@ -5,15 +5,9 @@
 	import Spacer from '$lib/components/base/Spacer.svelte';
 	import TextWithIconVertical from '$lib/components/feature/TextWithIconVertical.svelte';
 	import { cn } from '$lib/utils/cn';
+	import type { FeatureGrid } from '../types';
 
-	export let data: {
-		title: string;
-		threeColumns?: boolean;
-		features: {
-			title: string;
-			content: string;
-		}[];
-	};
+	export let data: FeatureGrid;
 </script>
 
 <Section classes="bg-primary-50 relative overflow-hidden">
