@@ -5,6 +5,7 @@
 	import Button from '../base/Button.svelte';
 	import Input from './Input.svelte';
 	import Textarea from './Textarea.svelte';
+	import Honeypot from './Honeypot.svelte';
 
 	let loading = false;
 	let serverError = false;
@@ -43,6 +44,7 @@
 	<Textarea name="message" error={form?.errors?.message} value={form?.data?.message}
 		>Message</Textarea
 	>
+	<Honeypot name="content" />
 	<Button classes="w-full {loading && 'animate-pulse'}" type="submit"
 		>{loading ? 'Loading ...' : 'Send'}</Button
 	>

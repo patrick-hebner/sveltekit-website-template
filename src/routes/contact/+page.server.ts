@@ -37,6 +37,7 @@ export const actions: Actions = {
 		const formData = await request.formData();
 
 		const contactSchema = zfd.formData({
+			content: zfd.text(z.string().optional()),
 			firstname: zfd.text(),
 			lastname: zfd.text(),
 			email: zfd.text(),
@@ -51,6 +52,10 @@ export const actions: Actions = {
 			};
 			return fail(400, data);
 		}
+		if (isBot(result.data.content)) {
+			return result;
+		}
+
 		try {
 			await mailer.sendContactMail(result.data);
 			return result;
@@ -59,3 +64,7 @@ export const actions: Actions = {
 		}
 	}
 };
+
+function isBot(contentField?: string) {
+	return !!contentField;
+}
