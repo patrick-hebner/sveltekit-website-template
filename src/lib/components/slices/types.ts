@@ -129,3 +129,7 @@ export type TeamGrid = {
 		};
 	}[];
 };
+
+export type Contact = {
+	title: string;
+};

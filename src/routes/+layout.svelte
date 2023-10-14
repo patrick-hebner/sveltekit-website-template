@@ -7,8 +7,10 @@
 	import SimpleCenteredFooter from '$lib/components/layout/footers/SimpleCenteredFooter.svelte';
 </script>
 
-<SimpleHeader />
-<main>
-	<slot />
-</main>
-<SimpleCenteredFooter />
+<div class="flex flex-col h-screen">
+	<SimpleHeader />
+	<main class="flex-grow">
+		<slot />
+	</main>
+	<SimpleCenteredFooter />
+</div>

@@ -10,6 +10,7 @@ import StaticCompaniesBanner from '$lib/components/slices/social-proof/StaticCom
 import TestimonialsTextWithAvatar from '$lib/components/slices/social-proof/TestimonialsTextWithAvatar.svelte';
 import SingleTestimonialTextWithAvatar from '$lib/components/slices/social-proof/SingleTestimonialTextWithAvatar.svelte';
 import TeamMembersGrid from '$lib/components/slices/team/TeamMembersGrid.svelte';
+import Contact from '$lib/components/slices/forms/Contact.svelte';
 
 export const components = {
 	CtaBanner: CtaBanner,
@@ -23,7 +24,8 @@ export const components = {
 	TestimonialsTextWithAvatar: TestimonialsTextWithAvatar,
 	HeroClassicSmall: HeroClassicSmall,
 	SingleTestimonialTextWithAvatar: SingleTestimonialTextWithAvatar,
-	TeamMembersGrid: TeamMembersGrid
+	TeamMembersGrid: TeamMembersGrid,
+	Contact: Contact
 };
 
 export function component(comp: string) {

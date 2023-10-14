@@ -13,10 +13,13 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/adapter-static": "^2.0.3",
 		"@sveltejs/kit": "^1.20.4",
+		"@types/11ty__eleventy-img": "^2.0.2",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
 		"@typescript-eslint/parser": "^5.45.0",
 		"autoprefixer": "^10.4.15",
+		"clsx": "^2.0.0",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte": "^2.30.0",
@@ -25,6 +28,7 @@
 		"prettier-plugin-svelte": "^2.10.1",
 		"svelte": "^4.0.5",
 		"svelte-check": "^3.4.3",
+		"tailwind-merge": "^1.14.0",
 		"tailwindcss": "^3.3.3",
 		"tslib": "^2.4.1",
 		"typescript": "^5.0.0",
@@ -34,9 +38,10 @@
 	"dependencies": {
 		"@11ty/eleventy-img": "^3.1.0",
 		"@fontsource/poppins": "^5.0.8",
-		"@types/11ty__eleventy-img": "^2.0.2",
-		"clsx": "^2.0.0",
+		"@types/nodemailer": "^6.4.11",
 		"lucide-svelte": "^0.276.0",
-		"tailwind-merge": "^1.14.0"
+		"nodemailer": "^6.9.6",
+		"zod": "^3.22.4",
+		"zod-form-data": "^2.0.2"
 	}
 }
