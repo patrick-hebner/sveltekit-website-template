@@ -3,7 +3,7 @@ import { fail, type Actions } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
 import { zfd } from 'zod-form-data';
 import { z } from 'zod';
-import { contactMail, mailer } from '$lib/server/mail';
+import { mailer } from '$lib/server/mail';
 
 export const load: PageServerLoad = async () => {
 	const slices = [
@@ -23,7 +23,7 @@ export const load: PageServerLoad = async () => {
 		{
 			component: 'Contact',
 			data: {
-				title: 'Contact us'
+				title: 'Send a message'
 			}
 		}
 	];
@@ -38,6 +38,7 @@ export const actions: Actions = {
 
 		const contactSchema = zfd.formData({
 			content: zfd.text(z.string().optional()),
+			initTime: zfd.numeric(),
 			firstname: zfd.text(),
 			lastname: zfd.text(),
 			email: zfd.text(),
@@ -52,7 +53,7 @@ export const actions: Actions = {
 			};
 			return fail(400, data);
 		}
-		if (isBot(result.data.content)) {
+		if (isBot(result.data.initTime, result.data.content)) {
 			return result;
 		}
 
@@ -65,6 +66,9 @@ export const actions: Actions = {
 	}
 };
 
-function isBot(contentField?: string) {
-	return !!contentField;
+function isBot(initTime: number, content?: string) {
+	const durationToBeNotABotInS = 5;
+	const now = Date.now();
+	const diffInS = (now - initTime) / 1000;
+	return !!content || diffInS < durationToBeNotABotInS;
 }

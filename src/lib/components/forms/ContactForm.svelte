@@ -6,6 +6,7 @@
 	import Input from './Input.svelte';
 	import Textarea from './Textarea.svelte';
 	import Honeypot from './Honeypot.svelte';
+	import { onMount } from 'svelte';
 
 	let loading = false;
 	let serverError = false;
@@ -50,8 +51,10 @@
 	>
 </form>
 {#if form?.success}
-	<div class="py-4 px-10 mt-10 bg-green-200">Successfully submitted!</div>
+	<div class="py-4 px-4 mt-10 ring-2 ring-green-500 rounded-sm">Successfully submitted!</div>
 {/if}
 {#if serverError}
-	<div class="py-4 px-10 mt-10 bg-red-200">An error occured. Cannot send message.</div>
+	<div class="py-4 px-4 mt-10 ring-2 ring-red-500 rounded-sm">
+		An error occured. Cannot send message.
+	</div>
 {/if}
