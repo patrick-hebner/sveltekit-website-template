@@ -16,9 +16,10 @@
 		'group transition-colors bg-primary-400 hover:bg-primary-500 font-bold text-lg flex relative z-0 py-2 px-4 rounded-sm h-fit w-fit',
 		classes,
 		{
-			'text-md px-2': variant === 'small' && !inverted,
-			'text-2xl px-10 font-bold': variant === 'large' && !inverted,
-			'text-3xl px-16 font-bold': variant === 'huge' && !inverted,
+			'text-inverted': variant === 'default' && !inverted,
+			'text-inverted text-md px-2': variant === 'small' && !inverted,
+			'text-inverted text-2xl px-10 font-bold': variant === 'large' && !inverted,
+			'text-inverted text-3xl px-16 font-bold': variant === 'huge' && !inverted,
 			'text-md px-2 bg-base hover:bg-primary-50 text-base': variant === 'small' && inverted,
 			'text-2xl px-10 font-bold bg-base hover:bg-primary-50 text-base':
 				variant === 'large' && inverted,
