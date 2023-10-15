@@ -1,7 +1,16 @@
 <script lang="ts">
-	import { component } from '$lib/utils/componentsMapping.js';
+	import HeroClassicSmall from '$lib/components/slices/hero/HeroClassicSmall.svelte';
+	import Contact from '$lib/components/slices/forms/Contact.svelte';
 
 	export let data;
+
+	export const components = {
+		HeroClassicSmall: HeroClassicSmall,
+		Contact: Contact
+	};
+	function component(comp: string) {
+		return components[comp as keyof typeof components];
+	}
 </script>
 
 {#each data.slices as slice}
