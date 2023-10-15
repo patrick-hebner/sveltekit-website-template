@@ -16,7 +16,7 @@ export const load: PageServerLoad = async () => {
 
 				image: {
 					stats: await optimize('./static/images/hero-contact.jpg'),
-					alt: ''
+					alt: 'Hero'
 				}
 			}
 		},
@@ -28,6 +28,10 @@ export const load: PageServerLoad = async () => {
 		}
 	];
 	return {
+		seo: {
+			title: 'Contact',
+			description: 'Metadescription for contact page'
+		},
 		slices
 	};
 };

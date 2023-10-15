@@ -12,7 +12,7 @@ export const load: PageServerLoad = async () => {
 
 				image: {
 					stats: await optimize('./static/images/hero-team.jpg'),
-					alt: ''
+					alt: 'Hero'
 				}
 			}
 		},
@@ -91,12 +91,16 @@ export const load: PageServerLoad = async () => {
 				title: "Convinced?<br /> Let's start a project!",
 				cta: {
 					title: 'Contact Us!',
-					link: ''
+					link: '/contact'
 				}
 			}
 		}
 	];
 	return {
+		seo: {
+			title: 'About',
+			description: 'Metadescription for about page'
+		},
 		slices
 	};
 };

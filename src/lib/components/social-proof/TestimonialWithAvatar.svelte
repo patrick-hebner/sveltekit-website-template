@@ -28,7 +28,7 @@
 			<Image stats={image.stats} alt={image.alt} cover classes="rounded-full grayscale " />
 		</div>
 		<div>
-			<Heading variant="xs" level="h4">{name}</Heading>
+			<Heading variant="xs" level="h3">{name}</Heading>
 			<Text tag="p">{position}</Text>
 		</div>
 	</div>
