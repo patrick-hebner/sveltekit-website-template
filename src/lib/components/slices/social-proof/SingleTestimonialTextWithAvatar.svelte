@@ -24,7 +24,7 @@
 	<Spacer size="large" />
 
 	<svg
-		class="w-full min-w-[1000px] absolute top-0 left-0 text-primary-50 z-0"
+		class="w-full min-w-[1000px] absolute top-0 left-0 text-primary-100 z-0"
 		viewBox="0 0 3118 3891"
 		fill="none"
 		xmlns="http://www.w3.org/2000/svg"

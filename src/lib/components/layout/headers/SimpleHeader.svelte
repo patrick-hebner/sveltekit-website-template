@@ -14,7 +14,7 @@
 
 	<div class="w-full h-full absolute left-0 top-0 overflow-hidden text-primary-50">
 		<svg
-			class="w-full absolute top-0 left-0 text-primary-50 z-0 min-w-[1000px]"
+			class="w-full absolute top-0 left-0 text-primary-50/50 z-0 min-w-[1000px]"
 			viewBox="0 0 3118 3891"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
