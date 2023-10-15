@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { cn } from '$lib/utils/cn';
-	import type { Metadata, MetadataEntry } from '@11ty/eleventy-img';
+	import type { Metadata } from '@11ty/eleventy-img';
 
-	export let lazy = true;
+	export let eager = false;
 	export let alt = '';
 	export let stats: Metadata;
 	export let sizes = '';
@@ -29,7 +29,7 @@
 		{alt}
 		width={defaultImg?.width}
 		height={defaultImg?.height}
-		loading={lazy ? 'lazy' : 'eager'}
+		loading={eager ? 'eager' : 'lazy'}
 		decoding="async"
 		class={cn('max-w-full h-auto block object-center', classes, {
 			'w-full h-full object-cover ': cover

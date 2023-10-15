@@ -22,6 +22,6 @@
 		</Text>
 	</Container>
 	<div class="absolute inset-0 z-0">
-		<Image classes="grayscale" cover stats={data.image.stats} alt={data.image.alt} />
+		<Image classes="grayscale" eager cover stats={data.image.stats} alt={data.image.alt} />
 	</div>
 </Section>

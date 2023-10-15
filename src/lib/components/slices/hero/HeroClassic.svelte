@@ -25,7 +25,7 @@
 		<div class="scroll-indicator w-[2px] bg-white absolute z-20 left-0 h-full" />
 	</div>
 	<div class="absolute inset-0 z-0">
-		<Image cover stats={data.image.stats} alt={data.image.alt} />
+		<Image eager cover stats={data.image.stats} alt={data.image.alt} />
 	</div>
 </Section>
 
