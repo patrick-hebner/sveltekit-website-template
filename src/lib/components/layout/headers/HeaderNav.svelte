@@ -8,9 +8,9 @@
 
 <div class="flex items-center md:hidden relative z-10">
 	{#if $mobileMenu}
-		<button on:click={mobileMenu.close}><X /></button>
+		<button aria-label="Close menu" on:click={mobileMenu.close}><X /></button>
 	{:else}
-		<button on:click={mobileMenu.open}><Menu /></button>
+		<button aria-label="Open menu" on:click={mobileMenu.open}><Menu /></button>
 	{/if}
 </div>
 <nav

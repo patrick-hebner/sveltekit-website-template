@@ -9,6 +9,7 @@
 
 <button
 	{type}
+	on:click
 	class={cn(
 		`group transition-colors bg-primary-400 hover:bg-primary-500 font-bold text-lg 
 		 flex relative z-0 py-2 px-4 rounded-sm h-fit w-fit justify-center`,

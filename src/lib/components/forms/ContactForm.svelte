@@ -6,12 +6,18 @@
 	import Input from './Input.svelte';
 	import Textarea from './Textarea.svelte';
 	import Honeypot from './Honeypot.svelte';
-	import { onMount } from 'svelte';
+	import { PUBLIC_EMAIL } from '$env/static/public';
+	import ButtonLink from '../base/ButtonLink.svelte';
 
 	let loading = false;
 	let serverError = false;
 
 	$: form = $page.form;
+
+	function mailto() {
+		const url = `mailto:${PUBLIC_EMAIL}`;
+		location.href = url;
+	}
 
 	const sendMessage: SubmitFunction = ({ formElement }) => {
 		loading = true;
@@ -58,3 +64,6 @@
 		An error occured. Cannot send message.
 	</div>
 {/if}
+<div class="mt-10 block text-center">
+	<ButtonLink on:click={mailto}>or send us and e-mail</ButtonLink>
+</div>
