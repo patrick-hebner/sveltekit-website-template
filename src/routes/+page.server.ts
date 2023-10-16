@@ -1,4 +1,4 @@
-import { optimize } from '$lib/utils/optimizeImage';
+import { optimize } from '$lib/server/optimizeImage';
 import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async () => {

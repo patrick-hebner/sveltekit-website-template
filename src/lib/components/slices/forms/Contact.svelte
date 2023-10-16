@@ -5,6 +5,8 @@
 	import Heading from '$lib/components/base/Heading.svelte';
 	import type { Contact } from '../types';
 	import ContactForm from '$lib/components/forms/ContactForm.svelte';
+	import ContactFormApi from '$lib/components/forms/ContactFormExternal.svelte';
+	import ContactFormExternal from '$lib/components/forms/ContactFormExternal.svelte';
 
 	export let data: Contact;
 </script>
@@ -16,7 +18,7 @@
 			<Heading variant="sm" level="h2" classes="text-primary-500 text-center max-w-md mx-auto mb-10"
 				>{data.title}</Heading
 			>
-			<ContactForm />
+			<ContactFormExternal />
 		</div>
 	</Container>
 	<Spacer size="large" />

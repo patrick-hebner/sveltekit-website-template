@@ -18,6 +18,7 @@
 		"@types/11ty__eleventy-img": "^2.0.2",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
 		"@typescript-eslint/parser": "^5.45.0",
+		"@types/nodemailer": "^6.4.11",
 		"autoprefixer": "^10.4.15",
 		"clsx": "^2.0.0",
 		"eslint": "^8.28.0",
@@ -38,7 +39,6 @@
 	"dependencies": {
 		"@11ty/eleventy-img": "^3.1.0",
 		"@fontsource/poppins": "^5.0.8",
-		"@types/nodemailer": "^6.4.11",
 		"lucide-svelte": "^0.276.0",
 		"nodemailer": "^6.9.6",
 		"zod": "^3.22.4",

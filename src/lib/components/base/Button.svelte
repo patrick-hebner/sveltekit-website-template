@@ -4,15 +4,17 @@
 	export let type: 'submit' | 'button' = 'button';
 	export let variant: 'small' | 'default' | 'large' | 'huge' = 'default';
 	export let inverted = false;
+	export let disabled = false;
 	export let classes = '';
 </script>
 
 <button
 	{type}
 	on:click
+	{disabled}
 	class={cn(
 		`group transition-colors bg-primary-400 hover:bg-primary-500 font-bold text-lg 
-		 flex relative z-0 py-2 px-4 rounded-sm h-fit w-fit justify-center`,
+		 flex relative z-0 py-2 px-4 rounded-sm h-fit w-fit justify-center disabled:opacity-10`,
 		classes,
 		{
 			'text-inverted': variant === 'default' && !inverted,

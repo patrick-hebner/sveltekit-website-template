@@ -8,6 +8,7 @@ const defaults: {
 };
 
 export async function optimize(url: string, options?: ImageOptions) {
+	console.log('>>>> Optimize!');
 	const stats = await Image(url, {
 		formats: options?.formats || defaults.formats,
 		widths: options?.widths || defaults.widths,
