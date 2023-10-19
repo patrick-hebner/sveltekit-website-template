@@ -10,7 +10,7 @@ export const load: PageServerLoad = async () => {
 			link: '/contact'
 		},
 		image: {
-			src: '/images/hero.jpg',
+			src: '/images/hero.webp',
 			alt: 'Hero'
 		}
 	};
@@ -35,15 +35,15 @@ export const load: PageServerLoad = async () => {
 		],
 		images: {
 			image1: {
-				src: '/images/featureImage1.jpg',
+				src: '/images/featureImage1.webp',
 				alt: 'feature 1'
 			},
 			image2: {
-				src: '/images/featureImage2.jpg',
+				src: '/images/featureImage2.webp',
 				alt: 'feature 2'
 			},
 			image3: {
-				src: '/images/featureImage3.jpg',
+				src: '/images/featureImage3.webp',
 				alt: 'feature 3'
 			}
 		}
@@ -86,7 +86,7 @@ export const load: PageServerLoad = async () => {
 			'This is some text describing a cool service of the company'
 		],
 		image: {
-			src: '/images/featureImage1.jpg',
+			src: '/images/featureImage1.webp',
 			alt: 'feature 1'
 		}
 	};
@@ -97,7 +97,7 @@ export const load: PageServerLoad = async () => {
 				name: 'Mary Jason',
 				position: 'CEO of Mary Creatives',
 				image: {
-					src: '/images/people/joel.jpg',
+					src: '/images/people/joel.webp',
 					alt: 'Mary Jason'
 				},
 				content: `I'm baby hexagon tote bag marfa 8-bit. Put a bird on it mustache craft beer meditation.
@@ -108,7 +108,7 @@ export const load: PageServerLoad = async () => {
 				name: 'Joel Hanson',
 				position: 'CEO of Joel Creatives',
 				image: {
-					src: '/images/people/ransford.jpg',
+					src: '/images/people/ransford.webp',
 					alt: 'Joel Hanson'
 				},
 				content: `I'm baby hexagon tote bag marfa 8-bit. Put a bird on it mustache craft beer meditation.
@@ -119,7 +119,7 @@ export const load: PageServerLoad = async () => {
 				name: 'July Harrison',
 				position: 'CEO of July Creatives',
 				image: {
-					src: '/images/people/toa.jpg',
+					src: '/images/people/toa.webp',
 					alt: 'July Harrison'
 				},
 				content: `I'm baby hexagon tote bag marfa 8-bit. Put a bird on it mustache craft beer meditation.

@@ -7,7 +7,7 @@ export const load: PageServerLoad = async () => {
 			'We are experienced team of motivated experts located around the world. We have a ton of practical experience in product strategy, UI/UX design and software development.',
 
 		image: {
-			src: '/images/hero-team.jpg',
+			src: '/images/hero-team.webp',
 			alt: 'Hero'
 		}
 	};
@@ -19,7 +19,7 @@ export const load: PageServerLoad = async () => {
 				occupation: 'CEO',
 
 				image: {
-					src: '/images/people/ayo.jpg'
+					src: '/images/people/ayo.webp'
 				}
 			},
 			{
@@ -27,7 +27,7 @@ export const load: PageServerLoad = async () => {
 				occupation: 'CTO',
 
 				image: {
-					src: '/images/people/tyler.jpg'
+					src: '/images/people/tyler.webp'
 				}
 			},
 			{
@@ -35,7 +35,7 @@ export const load: PageServerLoad = async () => {
 				occupation: 'Developer',
 
 				image: {
-					src: '/images/people/cagle.jpg'
+					src: '/images/people/cagle.webp'
 				}
 			},
 			{
@@ -43,7 +43,7 @@ export const load: PageServerLoad = async () => {
 				occupation: 'Designer',
 
 				image: {
-					src: '/images/people/july.jpg'
+					src: '/images/people/july.webp'
 				}
 			},
 			{
@@ -51,7 +51,7 @@ export const load: PageServerLoad = async () => {
 				occupation: 'Developer',
 
 				image: {
-					src: '/images/people/jeffery.jpg'
+					src: '/images/people/jeffery.webp'
 				}
 			},
 			{
@@ -59,7 +59,7 @@ export const load: PageServerLoad = async () => {
 				occupation: 'Marketing',
 
 				image: {
-					src: '/images/people/brooke.jpg'
+					src: '/images/people/brooke.webp'
 				}
 			}
 		]

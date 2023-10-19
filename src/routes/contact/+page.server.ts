@@ -12,7 +12,7 @@ export const load: PageServerLoad = async () => {
 			'Do you need help creating your new digital product or would you like us to support you in the development of your current product? Just send us an email.',
 
 		image: {
-			src: '/images/hero-contact.jpg',
+			src: '/images/hero-contact.webp',
 			alt: 'Hero'
 		}
 	};

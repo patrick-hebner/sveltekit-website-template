@@ -7,7 +7,7 @@ export const load: PageServerLoad = async () => {
 			'You need support from the idea to the launch of your new digital product. As a full service product agency we help you with all aspects of product development.',
 
 		image: {
-			src: '/images/hero-services.jpg',
+			src: '/images/hero-services.webp',
 			alt: 'Hero'
 		}
 	};
@@ -18,7 +18,7 @@ export const load: PageServerLoad = async () => {
 				title: 'This is some text describing a cool service of the company',
 				text: 'Etsy roof party hashtag, iceland gochujang sus copper mug palo santo. Mumblecore wayfarers tofu vice pinterest roof party swag cliche 8-bit bodega boys live-edge mukbang freegan.',
 				image: {
-					src: '/images/featureImage2.jpg',
+					src: '/images/featureImage2.webp',
 					alt: 'feature 1'
 				}
 			},
@@ -26,7 +26,7 @@ export const load: PageServerLoad = async () => {
 				title: 'This is some text describing a cool service of the company',
 				text: 'Etsy roof party hashtag, iceland gochujang sus copper mug palo santo. Mumblecore wayfarers tofu vice pinterest roof party swag cliche 8-bit bodega boys live-edge mukbang freegan.',
 				image: {
-					src: '/images/featureImage3.jpg',
+					src: '/images/featureImage3.webp',
 					alt: 'feature 1'
 				}
 			},
@@ -34,7 +34,7 @@ export const load: PageServerLoad = async () => {
 				title: 'This is some text describing a cool service of the company',
 				text: 'Etsy roof party hashtag, iceland gochujang sus copper mug palo santo. Mumblecore wayfarers tofu vice pinterest roof party swag cliche 8-bit bodega boys live-edge mukbang freegan.',
 				image: {
-					src: '/images/featureImage2.jpg',
+					src: '/images/featureImage2.webp',
 					alt: 'feature 1'
 				}
 			},
@@ -42,7 +42,7 @@ export const load: PageServerLoad = async () => {
 				title: 'This is some text describing a cool service of the company',
 				text: 'Etsy roof party hashtag, iceland gochujang sus copper mug palo santo. Mumblecore wayfarers tofu vice pinterest roof party swag cliche 8-bit bodega boys live-edge mukbang freegan.',
 				image: {
-					src: '/images/featureImage3.jpg',
+					src: '/images/featureImage3.webp',
 					alt: 'feature 1'
 				}
 			}
@@ -53,7 +53,7 @@ export const load: PageServerLoad = async () => {
 			name: 'Mary Jason',
 			position: 'CEO of Mary Creatives',
 			image: {
-				src: '/images/people/joel.jpg',
+				src: '/images/people/joel.webp',
 				alt: 'Mary Jason'
 			},
 			content: `I'm baby hexagon tote bag marfa 8-bit. Put a bird on it mustache craft beer meditation.
