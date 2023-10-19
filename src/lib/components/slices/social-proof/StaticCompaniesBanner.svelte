@@ -12,13 +12,13 @@
 <Section>
 	<Spacer />
 	<Container>
-		<Heading variant="sm" level="h2" classes="text-primary-500 text-center max-w-md mx-auto"
+		<Heading variant="sm" level="h2" classes="text-primary-600 text-center max-w-md mx-auto"
 			>{data.title}</Heading
 		>
 		<div class="mt-20 grid grid-cols-3 lg:grid-cols-6 place-items-center gap-10">
 			{#each data.logos as logo}
 				<div class="w-16 h-1w-16">
-					<Image stats={logo.stats} alt={logo.alt} />
+					<Image src={logo.src} alt={logo.alt} />
 					<!-- h-full w-full object-contain -->
 				</div>
 			{/each}

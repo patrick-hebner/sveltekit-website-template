@@ -1,12 +1,11 @@
 <script lang="ts">
 	import Heading from '$lib/components/base/Heading.svelte';
 	import Text from '$lib/components/base/Text.svelte';
-	import type EleventyImage from '@11ty/eleventy-img';
 	import Image from '../base/Image.svelte';
 	import { cn } from '$lib/utils/cn';
 
 	export let image: {
-		stats: EleventyImage.Metadata;
+		src: string;
 		alt: string;
 	};
 	export let name = '';
@@ -24,8 +23,8 @@
 	</div>
 	<Text classes={cn('relative z-10')}><slot /></Text>
 	<div class="flex gap-4 items-center">
-		<div class="w-20 h-20 flex-shrink-0 ring-2 ring-primary-500 rounded-full">
-			<Image stats={image.stats} alt={image.alt} cover classes="rounded-full grayscale " />
+		<div class="w-20 h-20 flex-shrink-0 ring-2 ring-primary-600 rounded-full">
+			<Image src={image.src} alt={image.alt} cover classes="rounded-full grayscale " />
 		</div>
 		<div>
 			<Heading variant="xs" level="h3">{name}</Heading>

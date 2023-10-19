@@ -15,6 +15,6 @@
 	}
 </script>
 
-{#each data.slices as slice}
-	<svelte:component this={component(slice.component)} data={slice.data} />
-{/each}
+<HeroClassicSmall data={data.heroClassicSmall} />
+<TeamMembersGrid data={data.teamMembersGrid} />
+<CtaBanner data={data.ctaBanner} />

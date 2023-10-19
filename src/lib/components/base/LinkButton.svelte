@@ -13,7 +13,7 @@
 	{target}
 	rel={target === '_blank' ? 'noopener noreferrer' : null}
 	class={cn(
-		'group transition-colors bg-primary-400 hover:bg-primary-500 font-bold text-lg flex relative z-0 py-2 px-4 rounded-sm h-fit w-fit',
+		'group transition-colors bg-primary-600 hover:bg-primary-700 font-bold text-lg flex relative z-0 py-2 px-4 rounded-sm h-fit w-fit',
 		classes,
 		{
 			'text-inverted': variant === 'default' && !inverted,

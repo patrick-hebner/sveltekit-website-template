@@ -4,7 +4,7 @@
 	import Section from '$lib/components/base/Section.svelte';
 	import Spacer from '$lib/components/base/Spacer.svelte';
 	import TextWithIconVertical from '$lib/components/feature/TextWithIconVertical.svelte';
-	import TeamMemberRect from '$lib/components/team/TeamMemberRect.svelte';
+	import TeamMemberRect from '$lib/components/team/TeamMemberCard.svelte';
 	import { cn } from '$lib/utils/cn';
 	import type { TeamGrid } from '../types';
 

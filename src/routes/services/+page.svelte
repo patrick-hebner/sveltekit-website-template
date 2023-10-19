@@ -5,18 +5,9 @@
 	import SingleTestimonialTextWithAvatar from '$lib/components/slices/social-proof/SingleTestimonialTextWithAvatar.svelte';
 
 	export let data;
-
-	export const components = {
-		CtaBanner: CtaBanner,
-		FeatureListImageText: FeatureListImageText,
-		HeroClassicSmall: HeroClassicSmall,
-		SingleTestimonialTextWithAvatar: SingleTestimonialTextWithAvatar
-	};
-	function component(comp: string) {
-		return components[comp as keyof typeof components];
-	}
 </script>
 
-{#each data.slices as slice}
-	<svelte:component this={component(slice.component)} data={slice.data} />
-{/each}
+<HeroClassicSmall data={data.heroClassicSmall} />
+<FeatureListImageText data={data.featureListImageText} />
+<SingleTestimonialTextWithAvatar data={data.singleTestimonialTextWithAvatar} />
+<CtaBanner data={data.ctaBanner} />

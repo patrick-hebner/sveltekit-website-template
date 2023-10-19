@@ -13,7 +13,7 @@
 <Section classes="relative">
 	<Spacer />
 	<div
-		class="absolute bottom-0 left-0 h-full w-full bg-gradient-to-tr from-primary-500/30 to-transparent z-10"
+		class="absolute bottom-0 left-0 h-full w-full bg-gradient-to-tr from-primary-700/60 to-transparent z-10"
 	/>
 	<Container classes="relative z-10 flex flex-col pb-10 pt-[20vw]">
 		<Heading classes="text-inverted mt-auto" level="h1" variant="lg">{data.title}</Heading>
@@ -21,7 +21,7 @@
 			{data.subtitle}
 		</Text>
 	</Container>
-	<div class="absolute inset-0 z-0">
-		<Image classes="grayscale" eager cover stats={data.image.stats} alt={data.image.alt} />
+	<div class="image absolute inset-0 z-0">
+		<Image classes="grayscale" eager cover src={data.image.src} alt={data.image.alt} />
 	</div>
 </Section>

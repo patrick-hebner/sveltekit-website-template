@@ -20,7 +20,7 @@
 		md:justify-end md:items-center md:h-full transition-all `,
 		{
 			'grid-rows-[0fr] pointer-events-none md:pointer-events-auto': !$mobileMenu,
-			'grid-rows-[1fr] border-b-2 border-primary-500': $mobileMenu
+			'grid-rows-[1fr] border-b-2 border-primary-600': $mobileMenu
 		}
 	)}
 >

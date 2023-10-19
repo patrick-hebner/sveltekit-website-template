@@ -4,8 +4,6 @@
 	import Container from '$lib/components/base/Container.svelte';
 	import Heading from '$lib/components/base/Heading.svelte';
 	import type { Contact } from '../types';
-	import ContactForm from '$lib/components/forms/ContactForm.svelte';
-	import ContactFormApi from '$lib/components/forms/ContactFormExternal.svelte';
 	import ContactFormExternal from '$lib/components/forms/ContactFormExternal.svelte';
 
 	export let data: Contact;
@@ -15,7 +13,7 @@
 	<Spacer size="large" />
 	<Container classes="relative z-10">
 		<div class="p-10 bg-base rounded-xl">
-			<Heading variant="sm" level="h2" classes="text-primary-500 text-center max-w-md mx-auto mb-10"
+			<Heading variant="sm" level="h2" classes="text-primary-600 text-center max-w-md mx-auto mb-10"
 				>{data.title}</Heading
 			>
 			<ContactFormExternal />

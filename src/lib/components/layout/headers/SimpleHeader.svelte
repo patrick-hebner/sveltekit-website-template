@@ -7,7 +7,7 @@
 <Section
 	tag="header"
 	classes="relative flex items-center justify-between fixed z-50 bg-base
-    w-full h-16 px-6 shadow-[inset_0_-2px_0_rgb(var(--color-primary-50))] border-b-2 border-primary-500"
+    w-full h-16 px-6 shadow-[inset_0_-2px_0_rgb(var(--color-primary-50))] border-b-2 border-primary-600"
 >
 	<Logo classes="relative z-10" />
 	<HeaderNav />

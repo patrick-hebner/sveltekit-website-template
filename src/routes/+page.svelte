@@ -8,22 +8,13 @@
 	import StaticCompaniesBanner from '$lib/components/slices/social-proof/StaticCompaniesBanner.svelte';
 	import TestimonialsTextWithAvatar from '$lib/components/slices/social-proof/TestimonialsTextWithAvatar.svelte';
 	export let data;
-
-	const components = {
-		CtaBanner: CtaBanner,
-		FaqClassic: FaqClassic,
-		FeatureGrid: FeatureGrid,
-		LeftTextWithMultipleImages: LeftTextWithMultipleImages,
-		RightTextWithImage: RightTextWithImage,
-		HeroClassic: HeroClassic,
-		StaticCompaniesBanner: StaticCompaniesBanner,
-		TestimonialsTextWithAvatar: TestimonialsTextWithAvatar
-	};
-	function component(comp: string) {
-		return components[comp as keyof typeof components];
-	}
 </script>
 
-{#each data.slices as slice}
-	<svelte:component this={component(slice.component)} data={slice.data} />
-{/each}
+<HeroClassic data={data.heroClassic} />
+<StaticCompaniesBanner data={data.staticCompaniesBanner} />
+<LeftTextWithMultipleImages data={data.leftTextWithMultipleImages} />
+<FeatureGrid data={data.featureGrid} />
+<RightTextWithImage data={data.rightTextWithImage} />
+<TestimonialsTextWithAvatar data={data.testimonialsTextWithAvatar} />
+<FaqClassic data={data.faqClassic} />
+<CtaBanner data={data.ctaBanner} />

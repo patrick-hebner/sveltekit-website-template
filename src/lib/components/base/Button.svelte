@@ -13,7 +13,7 @@
 	on:click
 	{disabled}
 	class={cn(
-		`group transition-colors bg-primary-400 hover:bg-primary-500 font-bold text-lg 
+		`group transition-colors bg-primary-600 hover:bg-primary-700 font-bold text-lg 
 		 flex relative z-0 py-2 px-4 rounded-sm h-fit w-fit justify-center disabled:opacity-10`,
 		classes,
 		{

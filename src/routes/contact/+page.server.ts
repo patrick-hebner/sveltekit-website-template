@@ -1,4 +1,3 @@
-import { optimize } from '$lib/server/optimizeImage';
 import type { PageServerLoad } from './$types';
 
 // import { fail, type Actions } from '@sveltejs/kit';
@@ -7,33 +6,26 @@ import type { PageServerLoad } from './$types';
 // import { mailer } from '$lib/server/mail';
 
 export const load: PageServerLoad = async () => {
-	const slices = [
-		{
-			component: 'HeroClassicSmall',
-			data: {
-				title: 'Contact us',
-				subtitle:
-					'Do you need help creating your new digital product or would you like us to support you in the development of your current product? Just send us an email.',
+	const heroClassicSmall = {
+		title: 'Contact us',
+		subtitle:
+			'Do you need help creating your new digital product or would you like us to support you in the development of your current product? Just send us an email.',
 
-				image: {
-					stats: await optimize('./static/images/hero-contact.jpg'),
-					alt: 'Hero'
-				}
-			}
-		},
-		{
-			component: 'Contact',
-			data: {
-				title: 'Send a message'
-			}
+		image: {
+			src: '/images/hero-contact.jpg',
+			alt: 'Hero'
 		}
-	];
+	};
+	const contact = {
+		title: 'Send a message'
+	};
 	return {
 		seo: {
 			title: 'Contact',
 			description: 'Metadescription for contact page'
 		},
-		slices
+		heroClassicSmall,
+		contact
 	};
 };
 

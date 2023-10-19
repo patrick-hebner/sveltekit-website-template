@@ -1,12 +1,28 @@
-import type EleventyImage from '@11ty/eleventy-img';
 import type { FaqItem } from './faq/types';
 
-export type Slice<T> = {
-	component: 'CtaBanner';
-	data: T;
-};
+export type SliceData = HeroClassic &
+	HeroClassicSmall &
+	StaticCompaniesBanner &
+	LeftTextWithMultipleImages &
+	FeatureGrid &
+	RightTextWithImage &
+	TestimonialsTextWithAvatar &
+	SingleTestimonialTextWithAvatar &
+	FaqClassic &
+	CtaBanner;
 
-export type Slices = [Slice<CtaBanner>];
+export type Slices =
+	| HeroClassic
+	| HeroClassicSmall
+	| StaticCompaniesBanner
+	| LeftTextWithMultipleImages
+	| FeatureGrid
+	| FeatureListImageText
+	| RightTextWithImage
+	| TestimonialsTextWithAvatar
+	| SingleTestimonialTextWithAvatar
+	| FaqClassic
+	| CtaBanner;
 
 export type CtaBanner = {
 	title: string;
@@ -36,7 +52,7 @@ export type FeatureListImageText = {
 		text: string;
 		bullets?: string[];
 		image: {
-			stats: EleventyImage.Metadata;
+			src: string;
 			alt: string;
 		};
 	}[];
@@ -48,15 +64,15 @@ export type LeftTextWithMultipleImages = {
 	bullets: string[];
 	images: {
 		image1: {
-			stats: EleventyImage.Metadata;
+			src: string;
 			alt: string;
 		};
 		image2: {
-			stats: EleventyImage.Metadata;
+			src: string;
 			alt: string;
 		};
 		image3: {
-			stats: EleventyImage.Metadata;
+			src: string;
 			alt: string;
 		};
 	};
@@ -67,7 +83,7 @@ export type RightTextWithImage = {
 	text: string;
 	bullets?: string[];
 	image: {
-		stats: EleventyImage.Metadata;
+		src: string;
 		alt: string;
 	};
 };
@@ -80,7 +96,7 @@ export type HeroClassic = {
 		link: string;
 	};
 	image: {
-		stats: EleventyImage.Metadata;
+		src: string;
 		alt: string;
 	};
 };
@@ -88,24 +104,33 @@ export type HeroClassic = {
 export type HeroClassicSmall = {
 	title: string;
 	subtitle: string;
-	cta: {
-		title: string;
-		link: string;
-	};
 	image: {
-		stats: EleventyImage.Metadata;
+		src: string;
 		alt: string;
 	};
 };
 
-export type SingleTestimonialTextWithAvatar = {
+export type TestimonialsTextWithAvatar = {
 	title: string;
+	testimonials: {
+		name: string;
+		position: string;
+		content: string;
+		image: {
+			src: string;
+			alt: string;
+		};
+	}[];
+};
+
+export type SingleTestimonialTextWithAvatar = {
+	title?: string;
 	testimonial: {
 		name: string;
 		position: string;
 		content: string;
 		image: {
-			stats: EleventyImage.Metadata;
+			src: string;
 			alt: string;
 		};
 	};
@@ -114,7 +139,7 @@ export type SingleTestimonialTextWithAvatar = {
 export type StaticCompaniesBanner = {
 	title: string;
 	logos: {
-		stats: EleventyImage.Metadata;
+		src: string;
 		alt: string;
 	}[];
 };
@@ -124,7 +149,7 @@ export type TeamGrid = {
 		name: string;
 		occupation: string;
 		image: {
-			stats: EleventyImage.Metadata;
+			src: string;
 			alt?: string;
 		};
 	}[];

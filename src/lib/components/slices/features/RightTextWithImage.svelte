@@ -15,7 +15,7 @@
 	<div slot="left" class="h-80 md:h-full md:flex md:items-center md:max-w-[28rem]">
 		<div class="h-full md:h-auto">
 			<Image
-				stats={data.image.stats}
+				src={data.image.src}
 				alt={data.image.alt}
 				sizes="(min-width: 768px) 50vw, 100vw"
 				cover

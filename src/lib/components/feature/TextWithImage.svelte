@@ -1,10 +1,8 @@
 <script lang="ts">
-	import SplitScreenContainer from '../base/SplitScreenContainer.svelte';
 	import TextWithIcon from '$lib/components/feature/TextWithIcon.svelte';
 	import Image from '$lib/components/base/Image.svelte';
 	import Heading from '$lib/components/base/Heading.svelte';
 	import Text from '$lib/components/base/Text.svelte';
-	import type EleventyImage from '@11ty/eleventy-img';
 	import { cn } from '$lib/utils/cn';
 
 	export let inverted = false;
@@ -13,7 +11,7 @@
 		text: String;
 		bullets?: string[];
 		image: {
-			stats: EleventyImage.Metadata;
+			src: string;
 			alt: string;
 		};
 	};
@@ -22,9 +20,8 @@
 <div class="flex flex-col md:flex-row flex-1 gap-6 md:gap-10 items-center">
 	<div class="md:w-1/2 max-h-full w-full">
 		<Image
-			stats={data.image.stats}
+			src={data.image.src}
 			alt={data.image.alt}
-			sizes="(min-width: 768px) 50vw, 100vw"
 			cover
 			classes="rounded-3xl grayscale w-full max-h-[240px] md:max-h-full"
 		/>

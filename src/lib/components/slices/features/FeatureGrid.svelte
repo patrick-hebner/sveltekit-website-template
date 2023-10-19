@@ -10,10 +10,10 @@
 	export let data: FeatureGrid;
 </script>
 
-<Section classes="bg-primary-50 relative overflow-hidden">
+<Section classes="bg-primary-600 relative overflow-hidden">
 	<Spacer />
 	<Container classes="relative z-10">
-		<Heading variant="lg" level="h2" classes="text-center text-primary-500">{data.title}</Heading>
+		<Heading variant="lg" level="h2" classes="text-center text-inverted">{data.title}</Heading>
 		<div
 			class={cn('grid grid-cols-1 sm:grid-cols-2  gap-20 mt-20', {
 				'lg:grid-cols-3': data.threeColumns
@@ -29,7 +29,7 @@
 	</Container>
 	<Spacer />
 	<svg
-		class="absolute top-0 left-0 w-full text-inverted opacity-30"
+		class="absolute top-0 left-0 w-full text-primary-700"
 		version="1.0"
 		xmlns="http://www.w3.org/2000/svg"
 		viewBox="0 0 2338 2918"

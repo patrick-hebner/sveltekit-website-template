@@ -1,22 +1,16 @@
-# create-svelte
+# Svelte Kit Website Template
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Multi-page Svelte Kit template for a quick start to your new project.
 
-## Creating a project
+- Tailwind CSS themable with css custom properties
+- Pages for Home, About, Services and Contact
+- Several prepared slice components from which you can easily compose new pages
+- Contact form with validation. One Version for static pages (default) and one for sending emails from your server (you need to enable some commented code for this)
+- Responsive
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+  ![alt text](./preview.png)
 
 ## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
 npm run dev

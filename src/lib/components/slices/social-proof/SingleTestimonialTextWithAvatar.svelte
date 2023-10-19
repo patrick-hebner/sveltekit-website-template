@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Container from '$lib/components/base/Container.svelte';
-	import Heading from '$lib/components/base/Heading.svelte';
 	import Section from '$lib/components/base/Section.svelte';
 	import Spacer from '$lib/components/base/Spacer.svelte';
 	import TestimonialWithAvatar from '$lib/components/social-proof/TestimonialWithAvatar.svelte';
@@ -12,7 +11,7 @@
 <Section classes="overflow-hidden">
 	<Spacer size="large" />
 	<Container classes="relative z-10">
-		<div class="p-10 mt-16 bg-base rounded-xl">
+		<div class="p-10 mt-16 bg-base rounded-xl ring-4 ring-primary-100">
 			<TestimonialWithAvatar
 				centered
 				name={data.testimonial.name}

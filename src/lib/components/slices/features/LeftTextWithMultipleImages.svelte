@@ -29,19 +29,19 @@
 	>
 		<div class="flex flex-col lg:flex-row gap-2 items-end justify-end">
 			<Image
-				stats={data.images.image1.stats}
+				src={data.images.image1.src}
 				alt={data.images.image1.alt}
 				pictureClasses="order-2 lg:order-1"
 				classes="w-full md:w-[200px] lg:w-[200px] xl:w-[300px] rounded-3xl flex-shrink-0 h-fit"
 			/>
 			<Image
-				stats={data.images.image2.stats}
+				src={data.images.image2.src}
 				alt={data.images.image2.alt}
 				classes="hidden md:block w-full md:w-[200px] xl:w-[300px] rounded-3xl flex-shrink-0"
 			/>
 		</div>
 		<Image
-			stats={data.images.image3.stats}
+			src={data.images.image3.src}
 			alt={data.images.image3.alt}
 			classes="w-full md:w-[200px] lg:w-[300px] xl:w-[400px] rounded-3xl"
 		/>

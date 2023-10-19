@@ -27,13 +27,13 @@
 
 <div
 	class={cn('w-full border-b-2 border-primary-100 ', {
-		'border-primary-500 mb-10': isOpen
+		'border-primary-600 mb-10': isOpen
 	})}
 >
 	<button
 		on:click={handleClick}
-		class={cn('flex w-full justify-between py-4 transition-all hover:text-primary-500', {
-			'border-primary-500 text-primary-500': isOpen
+		class={cn('flex w-full justify-between py-4 transition-all hover:text-primary-600', {
+			'border-primary-600 text-primary-600': isOpen
 		})}
 		aria-expanded={isOpen}
 		aria-controls="accordion-{itemId}"

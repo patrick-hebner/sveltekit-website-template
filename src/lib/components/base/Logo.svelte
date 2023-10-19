@@ -5,7 +5,7 @@
 	export let classes = '';
 </script>
 
-<a {href} class={cn('text-primary-500 w-fit h-fit', classes)}>
+<a {href} class={cn('text-primary-600 w-fit h-fit', classes)}>
 	<svg width="46" height="34" viewBox="0 0 46 34" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<title>Logo</title>
 		<path d="M46 0H30L0 34H16L46 0Z" fill="currentColor" />
