@@ -18,8 +18,7 @@
 		<div class="mt-20 grid grid-cols-3 lg:grid-cols-6 place-items-center gap-10">
 			{#each data.logos as logo}
 				<div class="w-16 h-1w-16">
-					<Image src={logo.src} alt={logo.alt} />
-					<!-- h-full w-full object-contain -->
+					<Image width="200" height="75" src={logo.src} alt={logo.alt} />
 				</div>
 			{/each}
 		</div>
