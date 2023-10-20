@@ -12,7 +12,7 @@
 <Section classes="overflow-hidden">
 	<Spacer size="large" />
 	<Container classes="relative z-10">
-		<div class="p-10 bg-base rounded-xl">
+		<div class="p-10 bg-base rounded-xl ring-4 ring-primary-100">
 			<Heading variant="sm" level="h2" classes="text-primary-600 text-center max-w-md mx-auto mb-10"
 				>{data.title}</Heading
 			>
